@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Your Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="tabbar">
+    <div class="tabbar-inner">
+      <span class="tab-brand">~/portfolio</span>
+      <a class="tab" href="index.html">index.html</a>
+      <a class="tab" href="about.html">about.html</a>
+      <a class="tab" href="projects.html">projects.html</a>
+      <a class="tab active" href="contact.html">contact.html</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section style="padding-top: 56px;">
+      <p class="eyebrow">contact</p>
+      <h1 style="font-size: 32px; margin: 0 0 8px;">Let's talk</h1>
+      <p style="margin-bottom: 32px; max-width: 600px;">
+        Reaching out about an internship, a project, or just want to say hi —
+        any of these work.
+      </p>
+
+      <div class="contact-grid">
+
+        <a class="contact-card" href="mailto:you@example.com">
+          <div class="label">email</div>
+          <div class="value">you@example.com</div>
+        </a>
+
+        <a class="contact-card" href="https://github.com/yourusername" target="_blank" rel="noopener">
+          <div class="label">github</div>
+          <div class="value">@yourusername</div>
+        </a>
+
+        <a class="contact-card" href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">
+          <div class="label">linkedin</div>
+          <div class="value">/in/yourprofile</div>
+        </a>
+
+        <a class="contact-card" href="/assets/resume.pdf" target="_blank" rel="noopener">
+          <div class="label">resume</div>
+          <div class="value">Download PDF</div>
+        </a>
+
+      </div>
+
+      <!--
+        Note: GitHub Pages is static hosting, so a real "contact form" needs
+        a third-party form backend (Formspree, Getform, etc.) if you want one.
+        The mailto/link cards above work with zero setup, which is usually
+        enough for a portfolio.
+      -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Built with HTML/CSS · Deployed on GitHub Pages · © <span id="year"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

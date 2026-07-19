@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Your Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="tabbar">
+    <div class="tabbar-inner">
+      <span class="tab-brand">~/portfolio</span>
+      <a class="tab" href="index.html">index.html</a>
+      <a class="tab active" href="about.html">about.html</a>
+      <a class="tab" href="projects.html">projects.html</a>
+      <a class="tab" href="contact.html">contact.html</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section style="padding-top: 56px;">
+      <p class="eyebrow">about-me</p>
+      <h1 style="font-size: 32px; margin: 0 0 32px;">The longer version</h1>
+
+      <div class="about-grid">
+        <div>
+          <p>
+            [Write 2–3 short paragraphs here. Cover: what you're studying and where,
+            what got you into software, what kind of problems you like working on,
+            and what you're looking for in an internship. Keep it conversational —
+            write like you'd explain it to another engineer, not like a cover letter.]
+          </p>
+          <p>
+            [Second paragraph: maybe a specific moment or project that shaped your
+            interests, or something you're currently learning. Specificity beats
+            generic enthusiasm — "I got hooked on systems programming after building
+            a toy database" is better than "I'm passionate about technology."]
+          </p>
+
+          <h2 style="margin-top: 40px;">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="when">Summer 2026</span>
+              <div class="what">Role Title</div>
+              <div class="where">Company Name — one line on what you did/built</div>
+            </div>
+            <div class="timeline-item">
+              <span class="when">2025 – Present</span>
+              <div class="what">Role Title</div>
+              <div class="where">Club / TA position / research lab — one line</div>
+            </div>
+            <div class="timeline-item">
+              <span class="when">2024</span>
+              <div class="what">Started CS at University Name</div>
+              <div class="where">B.S. Computer Science, expected 2028</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="skill-block">
+            <h3>languages</h3>
+            <div class="skill-list">
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">C++</span>
+              <span class="tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <h3>frameworks &amp; tools</h3>
+            <div class="skill-list">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Git</span>
+            </div>
+          </div>
+          <div class="skill-block">
+            <h3>currently learning</h3>
+            <div class="skill-list">
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Rust</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Built with HTML/CSS · Deployed on GitHub Pages · © <span id="year"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

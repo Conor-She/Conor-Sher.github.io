@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="eng">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,0">
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <h1> Hello World</h1>
-  </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Software Engineer</title>
+<meta name="description" content="Portfolio of Your Name, software engineering student.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAV: styled like editor tabs. Edit labels/hrefs as needed ===== -->
+  <nav class="tabbar">
+    <div class="tabbar-inner">
+      <span class="tab-brand">~/portfolio</span>
+      <a class="tab active" href="index.html">index.html</a>
+      <a class="tab" href="about.html">about.html</a>
+      <a class="tab" href="projects.html">projects.html</a>
+      <a class="tab" href="contact.html">contact.html</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="terminal">
+        <div class="terminal-titlebar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">whoami.sh</span>
+        </div>
+        <div class="terminal-body">
+          <p class="prompt-line"><span class="sigil">$</span> <span class="path">~/</span> whoami</p>
+          <h1 class="hero-name">Your Name<span class="cursor"></span></h1>
+          <p class="hero-role" data-typewriter="Software Engineering Student · Aspiring Backend Developer"></p>
+          <p class="hero-tagline">
+            I build things with code and break them slightly less often than I used to.
+            Currently looking for a <strong>Summer 2027 SWE internship</strong>.
+            <!-- Edit: replace with your own one/two-line pitch -->
+          </p>
+          <div class="hero-links">
+            <a class="btn btn-primary" href="projects.html">View projects →</a>
+            <a class="btn btn-ghost" href="/assets/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+            <a class="btn btn-ghost" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUICK ABOUT BLURB ===== -->
+    <section>
+      <p class="eyebrow">about</p>
+      <h2>A little about me</h2>
+      <p style="max-width: 640px;">
+        I'm a [year, e.g. junior] studying [Computer Science] at [Your University].
+        I'm most interested in [area — e.g. backend systems, distributed computing, ML infra],
+        and I like [something human — a hobby, a team, a club]. Full story on the
+        <a href="about.html" style="color: var(--accent); text-decoration: underline;">about page</a>.
+      </p>
+    </section>
+
+    <!-- ===== FEATURED PROJECTS ===== -->
+    <section>
+      <p class="eyebrow">featured-projects</p>
+      <h2>A few things I've built</h2>
+      <div class="project-grid">
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Project One</span>
+            <div class="card-links">
+              <a href="https://github.com/yourusername/project-one" target="_blank" rel="noopener">code</a>
+              <a href="#" target="_blank" rel="noopener">demo</a>
+            </div>
+          </div>
+          <p>One or two sentences on what this project does and why it's interesting — what problem it solves, what you learned building it.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Project Two</span>
+            <div class="card-links">
+              <a href="https://github.com/yourusername/project-two" target="_blank" rel="noopener">code</a>
+              <a href="#" target="_blank" rel="noopener">demo</a>
+            </div>
+          </div>
+          <p>Same deal — keep it concrete. Mention scale/impact if you have numbers (users, requests/sec, test coverage, etc).</p>
+          <div class="tag-row">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+
+      </div>
+      <p style="margin-top: 24px;">
+        <a href="projects.html" style="color: var(--accent); text-decoration: underline; font-family: var(--font-display); font-size: 14px;">See all projects →</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Built with HTML/CSS · Deployed on GitHub Pages · © <span id="year"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
 </html>

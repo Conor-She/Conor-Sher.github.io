@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Your Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="tabbar">
+    <div class="tabbar-inner">
+      <span class="tab-brand">~/portfolio</span>
+      <a class="tab" href="index.html">index.html</a>
+      <a class="tab" href="about.html">about.html</a>
+      <a class="tab active" href="projects.html">projects.html</a>
+      <a class="tab" href="contact.html">contact.html</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section style="padding-top: 56px;">
+      <p class="eyebrow">projects</p>
+      <h1 style="font-size: 32px; margin: 0 0 8px;">Things I've built</h1>
+      <p style="margin-bottom: 32px; max-width: 600px;">
+        A mix of coursework, personal projects, and hackathon builds.
+        Code links go to GitHub; demo links go to a live version where one exists.
+      </p>
+
+      <!--
+        COPY-PASTE BLOCK: duplicate a .card div for each new project.
+        Delete the tags that don't apply, add your own.
+      -->
+      <div class="project-grid">
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Project One</span>
+            <div class="card-links">
+              <a href="https://github.com/yourusername/project-one" target="_blank" rel="noopener">code</a>
+              <a href="#" target="_blank" rel="noopener">demo</a>
+            </div>
+          </div>
+          <p>What it does, in plain terms. What was hard about it. What you'd do differently now. 2-3 sentences max — link out for detail.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Project Two</span>
+            <div class="card-links">
+              <a href="https://github.com/yourusername/project-two" target="_blank" rel="noopener">code</a>
+              <a href="#" target="_blank" rel="noopener">demo</a>
+            </div>
+          </div>
+          <p>Same format. If it's a team project, say so and note your specific contribution.</p>
+          <div class="tag-row">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Project Three</span>
+            <div class="card-links">
+              <a href="https://github.com/yourusername/project-three" target="_blank" rel="noopener">code</a>
+            </div>
+          </div>
+          <p>A smaller or older project still worth showing — maybe your first "real" one, or a coursework project you're proud of.</p>
+          <div class="tag-row">
+            <span class="tag">Java</span>
+            <span class="tag">JUnit</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Project Four</span>
+            <div class="card-links">
+              <a href="https://github.com/yourusername/project-four" target="_blank" rel="noopener">code</a>
+              <a href="#" target="_blank" rel="noopener">demo</a>
+            </div>
+          </div>
+          <p>Hackathon project, side project, whatever. Delete this card if you only have three — the grid works fine with an odd number.</p>
+          <div class="tag-row">
+            <span class="tag">TypeScript</span>
+            <span class="tag">Express</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Built with HTML/CSS · Deployed on GitHub Pages · © <span id="year"></span> Your Name</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
